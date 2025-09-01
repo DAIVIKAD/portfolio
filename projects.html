@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daivik AD project portfolio showcasing IoT solutions, web development, and academic projects." />
+  <meta name="keywords" content="Daivik AD, IoT Projects, Web Development, Attendance System, Smart Helmet, Academic Projects" />
+  <meta name="author" content="Daivik AD" />
+  <title>My Projects - Daivik A.D Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8d92d3c40f.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <!-- Simple Header without Background Image -->
+  <header class="simple-header">
+    <div class="container">
+      <nav>
+        <img src="images/rLogo.png" alt="Daivik Logo" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li class="menu-icon" onclick="closemenu()"><i class="fas fa-times"></i></li>
+        </ul>
+        <div class="menu-icon" onclick="openmenu()"><i class="fas fa-bars"></i></div>
+      </nav>
+      
+      <h1>My <span style="color: #ff004f;">Projects</span></h1>
+      <p>A collection of my development work spanning IoT, web applications, and innovative solutions</p>
+      
+      <!-- Small Navigation Buttons -->
+      <div class="small-action-buttons">
+        <a href="certificates.html" class="small-btn certificates-btn">
+          <i class="fas fa-certificate"></i>
+          <span>View Certificates</span>
+        </a>
+        <a href="index.html" class="small-btn home-btn">
+          <i class="fas fa-home"></i>
+          <span>Back to Home</span>
+        </a>
+      </div>
+      
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-down-indicator">
+        <span class="scroll-down-text">Scroll Down</span>
+        <span class="arrow-bounce">
+          <i class="fas fa-chevron-down"></i>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <section class="projects-page">
+    <div class="container">
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Applications</button>
+        <button class="filter-btn" data-filter="iot">IoT Solutions</button>
+        <button class="filter-btn" data-filter="ios">ios apps</button>
+        <button class="filter-btn" data-filter="android">Andriod app</button>
+        <button class="filter-btn" data-filter="internship">Internship Work</button>
+      </div>
+      
+      <div class="projects-gallery">
+        <div class="project-item" data-category="web">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/webapplication.png" alt="Attendance Tracking System" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/daivikad/attendance-system" title="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" title="Live Demo" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" title="View Details" class="view-details" data-project="attendance">
+                    <i class="fas fa-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Attendance Tracking System</h3>
+              <p class="project-summary">
+                Comprehensive web application enabling students to view attendance records and teachers 
+                to efficiently manage attendance data with role-based authentication and real-time updates.
+              </p>
+              <div class="tech-stack">
+                <span class="tech">Python</span>
+                <span class="tech">HTML/CSS</span>
+                <span class="tech">Database</span>
+                <span class="tech">Authentication</span>
+              </div>
+              <div class="project-stats">
+                <span class="stat"><i class="fas fa-calendar"></i> Nov 2024 - May 2025</span>
+                <span class="stat"><i class="fas fa-users"></i> Multi-user System</span>
+                <span class="stat"><i class="fas fa-award"></i> Academic Project</span>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+       <div class="project-item" data-category="iot">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/iot2.jpg" alt="Smart Riding Helmet" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/daivikad/" title="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" title="Demo Video" target="_blank">
+                    <i class="fas fa-play"></i>
+                  </a>
+                  <a href="#" title="View Details" class="view-details" data-project="helmet">
+                    <i class="fas fa-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Smart Riding Helmet (IoT)</h3>
+              <p class="project-summary">
+                Innovative IoT-based safety device integrating multiple sensors for crash detection, 
+                emergency alerts, and real-time location tracking to enhance road safety for motorcycle riders.
+              </p>
+              <div class="tech-stack">
+                <span class="tech">IoT</span>
+                <span class="tech">Arduino/ESP32</span>
+                <span class="tech">Sensors</span>
+                <span class="tech">GPS</span>
+                <span class="tech">GSM</span>
+              </div>
+              <div class="project-stats">
+                <span class="stat"><i class="fas fa-calendar"></i> Oct 2023 - Feb 2024</span>
+                <span class="stat"><i class="fas fa-shield-alt"></i> Safety Innovation</span>
+                <span class="stat"><i class="fas fa-microchip"></i> Hardware/Software</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item" data-category="android">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/mobapp.png" alt="Android Applications" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/daivikad/" title="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" title="APK Download" target="_blank">
+                    <i class="fas fa-download"></i>
+                  </a>
+                  <a href="#" title="View Details" class="view-details" data-project="android">
+                    <i class="fas fa-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Mobile Applications (Android)</h3>
+              <p class="project-summary">
+                Native Android applications developed during certification course, 
+                featuring modern UI/UX design, database integration, and Firebase connectivity.
+              </p>
+              <div class="tech-stack">
+                <span class="tech">Android</span>
+                <span class="tech">Java</span>
+                <span class="tech">Firebase</span>
+                <span class="tech">SQLite</span>
+              </div>
+              <div class="project-stats">
+                <span class="stat"><i class="fas fa-calendar"></i> 2023</span>
+                <span class="stat"><i class="fas fa-mobile-alt"></i> Mobile Development</span>
+                <span class="stat"><i class="fas fa-certificate"></i> Certification Project</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <div class="project-item" data-category="ios">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/ios.png" alt="ios Applications" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/daivikad/" title="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" title="Live Demo" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" title="View Details" class="view-details" data-project="javaweb">
+                    <i class="fas fa-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3> Wheather app (ios)</h3>
+              <p class="project-summary">
+                 wether application built using advanced ShiftUI technologies, 
+                and Xcode
+              </p>
+              <div class="tech-stack">
+                <span class="tech">ShiftUI</span>
+                <span class="tech">Xcode</span>
+                <span class="tech">Server</span>
+                <span class="tech">ios</span>
+              </div>
+              <div class="project-stats">
+                <span class="stat"><i class="fas fa-calendar"></i> 2025</span>
+                <span class="stat"><i class="fas fa-database"></i> weather api Integration</span>
+                <span class="stat"><i class="fas fa-cog"></i> ios App</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+       
+      
+      
+
+        
+       
+        <div class="project-item" data-category="iot">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/Iot1.jpg" alt="IoT Hardware Prototypes" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" title="Project Report" target="_blank">
+                    <i class="fas fa-file-alt"></i>
+                  </a>
+                  <a href="#" title="Demo" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a href="#" title="View Details" class="view-details" data-project="internship">
+                    <i class="fas fa-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>IoT Solutions & Hardware Prototypes</h3>
+              <p class="project-summary">
+                Developed and tested multiple IoT-based solutions during internship at Karunadu Technologies, 
+                including embedded systems, sensor integration, and performance optimization.
+              </p>
+              <div class="tech-stack">
+                <span class="tech">IoT</span>
+                <span class="tech">Embedded Systems</span>
+                <span class="tech">Sensors</span>
+                <span class="tech">Hardware Testing</span>
+              </div>
+              <div class="project-stats">
+                <span class="stat"><i class="fas fa-calendar"></i> Jan 2024</span>
+                <span class="stat"><i class="fas fa-building"></i> Karunadu Technologies</span>
+                <span class="stat"><i class="fas fa-briefcase"></i> Internship Work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="project-item" data-category="academic">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/project-mini-collection.jpg" alt="Academic Mini Projects" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/daivikad/" title="GitHub Collection" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" title="View All" target="_blank">
+                    <i class="fas fa-th"></i>
+                  </a>
+                  <a href="#" title="View Details" class="view-details" data-project="mini">
+                    <i class="fas fa-info-circle"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Academic Mini Projects Collection</h3>
+              <p class="project-summary">
+                Collection of 5+ mini projects completed during academic training, demonstrating 
+                practical application of programming concepts and end-to-end feature implementation.
+              </p>
+              <div class="tech-stack">
+                <span class="tech">Java</span>
+                <span class="tech">Firebase</span>
+                <span class="tech">IoT</span>
+                <span class="tech">Python</span>
+              </div>
+              <div class="project-stats">
+                <span class="stat"><i class="fas fa-code"></i> 5+ Projects</span>
+                <span class="stat"><i class="fas fa-graduation-cap"></i> Academic Training</span>
+                <span class="stat"><i class="fas fa-calendar"></i> 2022-2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      <div class="project-highlights">
+        <h2 class="sub-title">Project Highlights & Achievements</h2>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>End-to-End Implementation</h3>
+            <p>Successfully implemented complete project features from conception to deployment using diverse technology stacks including IoT, Java, and Firebase.</p>
+          </div>
+          
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Team Collaboration</h3>
+            <p>Worked effectively in team environments, collaborating with senior engineers and peers on complex technical projects and troubleshooting.</p>
+          </div>
+          
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Innovation in Safety</h3>
+            <p>Developed innovative IoT solutions focusing on safety and real-world applications, particularly in the Smart Riding Helmet project.</p>
+          </div>
+          
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Full-Stack Development</h3>
+            <p>Demonstrated proficiency in both frontend and backend development across multiple programming languages and frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modalContent">
+        <!-- Dynamic content will be inserted here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="projects-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>Interested in collaboration or learning more about my work? Check out my <a href="certificates.html">certificates</a> or <a href="index.html#contact">get in touch</a>!</p>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Daivik A.D. Made with <i class="fas fa-heart"></i> by Daivik</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu toggle - FIXED SYNTAX
+    function openmenu() {
+      var sidemenu = document.getElementById("sidemenu");
+      sidemenu.style.right = "0";
+    }
+    
+    function closemenu() {
+      var sidemenu = document.getElementById("sidemenu");
+      sidemenu.style.right = "-200px";
+    }
+
+    // Project filtering - FIXED SYNTAX
+    document.addEventListener('DOMContentLoaded', function() {
+      var filterBtns = document.querySelectorAll('.filter-btn');
+      var projectItems = document.querySelectorAll('.project-item');
+
+      for (var i = 0; i < filterBtns.length; i++) {
+        filterBtns[i].addEventListener('click', function() {
+          var currentBtn = this;
+          var filter = currentBtn.getAttribute('data-filter');
+          
+          // Remove active class from all buttons
+          for (var j = 0; j < filterBtns.length; j++) {
+            filterBtns[j].classList.remove('active');
+          }
+          currentBtn.classList.add('active');
+          
+          // Filter projects
+          for (var k = 0; k < projectItems.length; k++) {
+            var item = projectItems[k];
+            var category = item.getAttribute('data-category');
+            
+            if (filter === 'all' || category === filter) {
+              item.style.display = 'block';
+              setTimeout(function(element) {
+                return function() {
+                  element.style.opacity = '1';
+                  element.style.transform = 'scale(1)';
+                };
+              }(item), 100);
+            } else {
+              item.style.opacity = '0';
+              item.style.transform = 'scale(0.8)';
+              setTimeout(function(element) {
+                return function() {
+                  element.style.display = 'none';
+                };
+              }(item), 300);
+            }
+          }
+        });
+      }
+
+      // Project details data - FIXED SYNTAX
+      var projectDetails = {
+        attendance: {
+          title: "Attendance Tracking System",
+          description: "A comprehensive web-based attendance management system designed to streamline the process of tracking student attendance and providing teachers with efficient management tools.",
+          features: [
+            "Role-based authentication (Students & Teachers)",
+            "Real-time attendance tracking and updates",
+            "Interactive dashboard for attendance visualization",
+            "Student attendance history and analytics",
+            "Teacher attendance management interface",
+            "Automated attendance reports generation"
+          ],
+          challenges: "Implementing secure role-based access control and ensuring real-time data synchronization across different user types.",
+          outcome: "Successfully deployed system that improved attendance management efficiency by 40% and reduced manual tracking errors."
+        },
+        helmet: {
+          title: "Smart Riding Helmet (IoT)",
+          description: "An innovative IoT-based safety device designed to enhance motorcycle rider safety through advanced sensor integration and emergency response capabilities.",
+          features: [
+            "Crash detection using accelerometer and gyroscope sensors",
+            "Automatic emergency alert system",
+            "Real-time GPS location tracking",
+            "SMS/call notifications to emergency contacts",
+            "Impact severity assessment",
+            "Battery monitoring and low-power alerts"
+          ],
+          challenges: "Optimizing sensor accuracy to minimize false alarms while ensuring rapid response to actual emergencies, and managing power consumption.",
+          outcome: "Developed a working prototype that successfully detects crashes with 95% accuracy and sends emergency alerts within 30 seconds."
+        }
+      };
+
+      // Modal functionality - FIXED SYNTAX
+      var modal = document.getElementById('projectModal');
+      var closeBtn = document.querySelector('.close');
+      var viewDetailsButtons = document.querySelectorAll('.view-details');
+
+      for (var i = 0; i < viewDetailsButtons.length; i++) {
+        viewDetailsButtons[i].addEventListener('click', function(e) {
+          e.preventDefault();
+          var projectId = this.getAttribute('data-project');
+          openProjectModal(projectId);
+        });
+      }
+
+      closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+      });
+
+      window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+
+      function openProjectModal(projectId) {
+        var project = projectDetails[projectId];
+        if (project) {
+          var featuresHtml = '';
+          for (var i = 0; i < project.features.length; i++) {
+            featuresHtml += '<li>' + project.features[i] + '</li>';
+          }
+          
+          var modalHtml = '<h2>' + project.title + '</h2>' +
+            '<p><strong>Description:</strong> ' + project.description + '</p>' +
+            '<h3>Key Features:</h3>' +
+            '<ul>' + featuresHtml + '</ul>' +
+            '<h3>Technical Challenges:</h3>' +
+            '<p>' + project.challenges + '</p>' +
+            '<h3>Outcome:</h3>' +
+            '<p>' + project.outcome + '</p>';
+          
+          document.getElementById('modalContent').innerHTML = modalHtml;
+          modal.style.display = 'block';
+        }
+      }
+
+      // Small button animations - FIXED SYNTAX
+      var smallButtons = document.querySelectorAll('.small-btn');
+      for (var i = 0; i < smallButtons.length; i++) {
+        smallButtons[i].addEventListener('click', function(e) {
+          var button = this;
+          button.style.transform = 'scale(0.95)';
+          setTimeout(function() {
+            button.style.transform = '';
+          }, 150);
+        });
+      }
+
+      // Hide scroll indicator on scroll - FIXED SYNTAX
+      window.addEventListener('scroll', function() {
+        var scrollIndicator = document.querySelector('.scroll-down-indicator');
+        if (scrollIndicator) {
+          if (window.scrollY > 50) {
+            scrollIndicator.style.opacity = '0';
+            scrollIndicator.style.pointerEvents = 'none';
+          } else {
+            scrollIndicator.style.opacity = '1';
+            scrollIndicator.style.pointerEvents = 'auto';
+          }
+        }
+      });
+    });
+  </script>
+
+  <style>
+    .project-highlights {
+      margin-top: 80px;
+      padding-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .highlight-card {
+      background: #262626;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(255, 0, 79, 0.1);
+    }
+
+    .highlight-icon {
+      font-size: 48px;
+      color: #ff004f;
+      margin-bottom: 20px;
+    }
+
+    .highlight-card h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .highlight-card p {
+      color: #ababab;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    #modalContent h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    #modalContent h3 {
+      color: #ff004f;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    #modalContent p {
+      color: #ababab;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    #modalContent ul {
+      color: #ababab;
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    #modalContent li {
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+  </style>
+</body>
+</html>

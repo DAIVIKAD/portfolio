@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Daivik A.D's certificates and achievements in IoT, web development, mobile development, and AI/ML." />
+  <meta name="keywords" content="Daivik A.D, Certificates, IoT, Web Development, Android Development, Machine Learning" />
+  <meta name="author" content="Daivik A.D" />
+  <title>My Certificates - Daivik A.D Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/8d92d3c40f.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <!-- Simple Header without Background Image -->
+  <header class="simple-header">
+    <div class="container">
+      <nav>
+        <img src="images/rLogo.png" alt="Daivik Logo" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li class="menu-icon" onclick="closemenu()"><i class="fas fa-times"></i></li>
+        </ul>
+        <div class="menu-icon" onclick="openmenu()"><i class="fas fa-bars"></i></div>
+      </nav>
+
+      <h1>My <span style="color: #ff004f;">Certificates</span></h1>
+      <p>A showcase of my professional achievements and continuous learning journey</p>
+
+      <!-- Small Navigation Buttons -->
+      <div class="small-action-buttons">
+        <a href="projects.html" class="small-btn projects-btn">
+          <i class="fas fa-code"></i>
+          <span>View Projects</span>
+        </a>
+        <a href="index.html" class="small-btn home-btn">
+          <i class="fas fa-home"></i>
+          <span>Back to Home</span>
+        </a>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-down-indicator">
+        <span class="scroll-down-text">Scroll Down</span>
+        <span class="arrow-bounce">
+          <i class="fas fa-chevron-down"></i>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <section class="certificates-page">
+    <div class="container">
+      <div class="certificates-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="simulation">Job Simulation</button>
+        <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+        <button class="filter-btn" data-filter="mobile">Mobile Development</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="java">Java Development</button>
+      </div>
+
+      <div class="certificates-gallery">
+        <div class="certificate-item" data-category="simulation">
+          <div class="certificate-full">
+            <img src="images/deloitte-full.jpg" alt="Deloitte Technology Job Simulation" />
+            <div class="certificate-info">
+              <h3>Deloitte Technology Job Simulation</h3>
+              <div class="cert-meta">
+                <span class="issuer"><i class="fas fa-university"></i> Forage</span>
+                <span class="date"><i class="fas fa-calendar"></i> 2025</span>
+                <span class="grade"><i class="fas fa-star"></i> Completed</span>
+              </div>
+              <p class="cert-description">
+                Comprehensive technology consulting simulation covering modern software development practices,
+                client interaction, and real-world project scenarios. Gained exposure to professional
+                development methodologies and business technology solutions.
+              </p>
+              <div class="skills-covered">
+                <span class="skill">Technology Consulting</span>
+                <span class="skill">Project Management</span>
+                <span class="skill">Client Communication</span>
+                <span class="skill">Problem Solving</span>
+              </div>
+              <a href="images/deloitte-full.jpg" class="view-cert" target="_blank">
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="certificate-item" data-category="ai-ml">
+          <div class="certificate-full">
+            <img src="images/ml.jpeg" alt="Machine Learning & AI Workshop" />
+            <div class="certificate-info">
+              <h3>Machine Learning & AI Workshop</h3>
+              <div class="cert-meta">
+                <span class="issuer"><i class="fas fa-university"></i> Innovation Technologies</span>
+                <span class="date"><i class="fas fa-calendar"></i> 2023</span>
+                <span class="grade"><i class="fas fa-star"></i> Completed</span>
+              </div>
+              <p class="cert-description">
+                Intensive workshop on machine learning algorithms, artificial intelligence concepts,
+                and practical implementation. Covered supervised and unsupervised learning,
+                neural networks, and AI model development.
+              </p>
+              <div class="skills-covered">
+                <span class="skill">Machine Learning</span>
+                <span class="skill">Artificial Intelligence</span>
+                <span class="skill">Python</span>
+                <span class="skill">Data Analysis</span>
+                <span class="skill">Neural Networks</span>
+              </div>
+              <a href="images/ml.jpeg" class="view-cert" target="_blank">
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="certificate-item" data-category="mobile">
+          <div class="certificate-full">
+            <img src="images/android.jpeg" alt="Android App Development" />
+            <div class="certificate-info">
+              <h3>Android App Development</h3>
+              <div class="cert-meta">
+                <span class="issuer"><i class="fas fa-university"></i> Innovation Technologies</span>
+                <span class="date"><i class="fas fa-calendar"></i> 2023</span>
+                <span class="grade"><i class="fas fa-star"></i> Completed</span>
+              </div>
+              <p class="cert-description">
+                Comprehensive Android development course covering native app development,
+                user interface design, database integration, and app deployment.
+                Built multiple Android applications during the course.
+              </p>
+              <div class="skills-covered">
+                <span class="skill">Android Development</span>
+                <span class="skill">Java</span>
+                <span class="skill">Kotlin</span>
+                <span class="skill">SQLite</span>
+                <span class="skill">Firebase</span>
+                <span class="skill">UI/UX Design</span>
+              </div>
+              <a href="images/android.jpeg" class="view-cert" target="_blank">
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="certificate-item" data-category="web">
+          <div class="certificate-full">
+            <img src="images/webapp.jpeg" alt="Web Application Development" />
+            <div class="certificate-info">
+              <h3>Web Application Development</h3>
+              <div class="cert-meta">
+                <span class="issuer"><i class="fas fa-university"></i> Shri Devi Technology</span>
+                <span class="date"><i class="fas fa-calendar"></i> 2022</span>
+                <span class="grade"><i class="fas fa-star"></i> Completed</span>
+              </div>
+              <p class="cert-description">
+                Full-stack web development course covering frontend and backend technologies,
+                database design, and web application deployment. Developed multiple
+                dynamic web applications using modern frameworks.
+              </p>
+              <div class="skills-covered">
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">PHP</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">jQuery</span>
+              </div>
+              <a href="images/webapp.jpeg" class="view-cert" target="_blank">
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="certificate-item" data-category="java">
+          <div class="certificate-full">
+            <img src="images/java.jpeg" alt="Advanced Java Development" />
+            <div class="certificate-info">
+              <h3>Web Development Using Advanced Java</h3>
+              <div class="cert-meta">
+                <span class="issuer"><i class="fas fa-university"></i> AccelerLab Solutions Ltd</span>
+                <span class="date"><i class="fas fa-calendar"></i> 2022</span>
+                <span class="grade"><i class="fas fa-star"></i> Completed</span>
+              </div>
+              <p class="cert-description">
+                Advanced Java programming course focusing on enterprise web development,
+                frameworks, and server-side programming. Covered Spring Boot basics,
+                Hibernate, and enterprise application development.
+              </p>
+              <div class="skills-covered">
+                <span class="skill">Advanced Java</span>
+                <span class="skill">Spring Framework</span>
+                <span class="skill">Spring Boot</span>
+                <span class="skill">Hibernate</span>
+                <span class="skill">JSP/Servlets</span>
+                <span class="skill">Maven</span>
+              </div>
+              <a href="images/java.jpeg" class="view-cert" target="_blank">
+                <i class="fas fa-external-link-alt"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="achievements-section">
+        <h2 class="sub-title">Additional Achievements</h2>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>5+ Mini Projects</h3>
+            <p>Successfully completed over 5 mini projects during academic training, demonstrating practical application of learned concepts.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>End-to-End Implementation</h3>
+            <p>Successfully implemented complete features in team projects using IoT, Java, and Firebase technologies.</p>
+          </div>
+
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <h3>IoT Expertise</h3>
+            <p>Gained practical exposure to IoT tools and workflows during internship at Karunadu Technologies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="certificates-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>Want to see my work in action? Check out my <a href="projects.html">projects</a> or <a href="index.html#contact">get in touch</a>!</p>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 Daivik A.D. Made with <i class="fas fa-heart"></i> by Daivik</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Menu toggle
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+    // Certificate filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const certificateItems = document.querySelectorAll('.certificate-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        certificateItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, 100);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // Small button animations
+    document.querySelectorAll('.small-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        this.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          this.style.transform = '';
+        }, 150);
+      });
+    });
+
+    // Hide scroll indicator on scroll - MOBILE FIXED
+    window.addEventListener('scroll', function() {
+      const scrollIndicator = document.querySelector('.scroll-down-indicator');
+      if (scrollIndicator) {
+        if (window.scrollY > 50) {
+          scrollIndicator.style.opacity = '0';
+          scrollIndicator.style.pointerEvents = 'none';
+        } else {
+          scrollIndicator.style.opacity = '1';
+          scrollIndicator.style.pointerEvents = 'auto';
+        }
+      }
+    });
+  </script>
+
+  <style>
+    .achievements-section {
+      margin-top: 80px;
+      padding-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .achievement-card {
+      background: #262626;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(255, 0, 79, 0.1);
+    }
+
+    .achievement-icon {
+      font-size: 48px;
+      color: #ff004f;
+      margin-bottom: 20px;
+    }
+
+    .achievement-card h3 {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .achievement-card p {
+      color: #ababab;
+      line-height: 1.6;
+    }
+  </style>
+</body>
+</html>
