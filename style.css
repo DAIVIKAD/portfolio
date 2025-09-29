@@ -998,7 +998,7 @@ form .btn2 {
 /* ------------ Mobile Responsive Design - FIXED ------------ */
 @media only screen and (max-width: 768px) {
   #header {
-    background-image: url(images/main2.png);
+    background-image: url(images/main2.jpg);
     min-height: 100vh;
     height: auto;
   }
